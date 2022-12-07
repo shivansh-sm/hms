@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <title>Login</title>
+</head>
+<body>
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="img/logo_.png" alt="logo"></div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html" onclick="document.getElementById('login-form').style.display='block'"style="width:auto;">SignUp</a></li>
+            
+        </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section class="firstSection">
+        <div id='login.html' class='login-page'>
+            <div class="form-box">
+                 <div class='button-box'>
+                     <div id='btn'></div>
+                     <button type='button' onclick='login()' class='toggle-btn'>Login</button>
+                     <button type='button' onclick='register()' class='toggle-btn'>Register</button>
+                 </div>
+             <form id='login' class='input-group-login'>
+                 <table>
+                     <tr>
+                         <td><input type='text' class='input-field'placeholder='Email Id' required></td>
+                     </tr>
+                     <tr>    
+                         <td><input type='password' class='input-field'placeholder='Enter Password' required></td>
+                     </tr> 
+                     <tr>   
+                         <td><input type='checkbox' class='check-box'><span>Remember Password</span></td>
+                     </tr>
+                     <tr>       
+                         <td><button type='submit' class='submit-btn'>Submit</button></td>
+                     </tr>
+                 </table>        
+             </form>
+             <form id='register' class='input-group-register'>
+                 <table>
+                     <tr>
+                         <td><input type='text' class='input-field' placeholder='First Name' required></td>
+                     </tr>
+                     <tr>    
+                         <td><input type='text' class='input-field' placeholder='Last Name' required></td>
+                     </tr>
+                     <tr>    
+                         <td><input type='email' class='input-field' placeholder='Email Id' required></td>
+                     </tr>
+                     <tr>    
+                         <td><input type='password' class='input-field' placeholder='Enter The Password' required></td>
+                     </tr>
+                     <tr>    
+                         <td><input type='password' class='input-field' placeholder='Confirm Password' required></td>
+                     </tr>
+                     <tr>    
+                         <td><input type='checkbox' class='check-box'><span>I Agree To The Terms And Conditions</span></td>
+                     </tr>
+                     <tr>    
+                         <td><button type='submit' class='submit-btn'>Submit</button></td>
+                     </tr>
+                 </table>        
+             </form>
+             </div>
+         </div>
+     </section>
+     <script src="js/index.js"></script>
+    </body>
+    </html>
